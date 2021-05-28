@@ -1,12 +1,19 @@
 import React from "react";
-import "./rates.css";
+import { makeStyles } from "@material-ui/core/styles";
+
+export const useStyles = makeStyles((theme) => ({
+	rates: {
+		padding: "5px",
+		margin: "20px",
+	},
+}));
 
 const Rates = ({ rates }) => {
+	const classes = useStyles();
 	return (
 		<>
-			{/* <h4>{rates}</h4> */}
 			{rates.map((rate) => (
-				<h2 className="rates" key={rate}>
+				<h2 className={classes.rates} key={rate}>
 					Current 1 CAD to INR rate: ₹
 					<span style={{ color: "#df1b1b" }}>{rate.INR}</span>
 				</h2>
