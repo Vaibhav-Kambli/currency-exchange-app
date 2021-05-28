@@ -1,0 +1,29 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background: whitesmoke;
+}
+
+h1 {
+	text-align: center;
+}
+
+.rates__form {
+	flex-direction: row;
+	margin: 20px;
+	margin-left: 50px;
+	padding: 10px;
+}
+
+.rates__form input {
+	margin-right: 10px;
+}
+
+.input1 input {
+	margin-right: 10px;
+}
+
+html {
+	background: "whitesmoke";
+}
